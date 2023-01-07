@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carolina Spa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header contenedor">
+        <div class="header__grid">
+            <div class="header__logo">
+                <img src="build/img/logo.svg" alt="logo carolina spa">
+            </div>
+
+            <nav class="sociales">
+                <a class="sociales__enlace" href="https://facebook.com"><span class="sociales__accesible">Facebook</span></a>
+                <a class="sociales__enlace" href="https://twitter.com"><span class="sociales__accesible">Twitter</span></a>
+                <a class="sociales__enlace" href="https://instagram.com"><span class="sociales__accesible">Instagram</span></a>
+                <a class="sociales__enlace" href="https://youtube.com"><span class="sociales__accesible">Youtube</span></a>
+                <a class="sociales__enlace" href="https://tiktok.com"><span class="sociales__accesible">Tiktok</span></a>
+                <a class="sociales__enlace" href="https://pinterest.com"><span class="sociales__accesible">Pinterest</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="navegacion">
+        <div class="navegacion__border">
+            <nav class="navegacion__contenedor">
+                <a href="#" class="navegacion__enlace">Inicio</a>
+                <a href="#" class="navegacion__enlace">Nosotros</a>
+                <a href="#" class="navegacion__enlace">Servicios</a>
+                <a href="#" class="navegacion__enlace">Productos</a>
+                <a href="#" class="navegacion__enlace">Contacto</a>
+            </nav>
+        </div>
+    </div>
+
+    <section class="swiper contenedor">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <img class="slider__imagen" src="build/img/slide_01.jpg" alt="imagen slide">
+            </li>
+            <li class="swiper-slide">
+                <img class="slider__imagen" src="build/img/slide_02.jpg" alt="imagen slide">
+            </li>
+            <li class="swiper-slide">
+                <img class="slider__imagen" src="build/img/slide_03.jpg" alt="imagen slide">
+            </li>
+        </ul>
+    </section>
+
+    <section class="bienvenida seccion">
+        <h1 class="bienvenida__heading">Bienvenido(a) a nuestro <span>sitio web</span></h1>
+        <p class="bienvenida__texto">Te sentirás como nuevo(a) con nuestro masajistas profesionales</p>
+    </section>
+
+    <section class="cards">
+        <div class="cards__grid contenedor">
+            <div class="card">
+                <img src="build/img/servicio_01.jpg" alt="imagen card" class="card__imagen">
+
+                <div class="card__contenido">
+                    <h2 class="card__heading">Conoce sobre <span>Nosotros</span></h2>
+
+                    <a href="#" class="card__enlace">Leer más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="build/img/servicio_02.jpg" alt="imagen card" class="card__imagen">
+
+                <div class="card__contenido">
+                    <h2 class="card__heading">nuestros <span>servicios</span></h2>
+
+                    <a href="#" class="card__enlace">Leer más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="build/img/servicio_03.jpg" alt="imagen card" class="card__imagen">
+
+                <div class="card__contenido">
+                    <h2 class="card__heading">Visita nuestra<span>tienda<span/></h2>
+
+                    <a href="#" class="card__enlace">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="horario">
+        <div class="horario__grid contenedor">
+            <div class="horario__contenido">
+                <h3 class="horario__heading">Horarios</h3>
+                <p class="horario__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam nihil porro, et, aspernatur repellat quibusdam
+                rerum vitae repudiandae voluptates nostrum, nesciunt
+                dolorum quos nisi cum illo modi autem aliquam nam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <table class="tabla">
+                    <thead class="tabla__thead"><!--Parte superior de la tabla-->
+                        <tr><!--Row-->
+                            <th class="tabla__th">Día</th>
+                            <th class="tabla__th">De</th>
+                            <th class="tabla__th">Hasta</th>
+                        </tr>
+                    </thead><!--Fin parte superior-->
+
+                    <tbody class="tabla__tbody">
+                        <tr class="tabla__tr"><!--Row-->
+                            <td class="tabla__td">Lunes</td><!--Celda del row-->
+                            <td class="tabla__td">09:00</td>
+                            <td class="tabla__td">19:00</td>
+                        </tr>
+                        
+                        <tr class="tabla__tr"><!--Row-->
+                            <td class="tabla__td">Martes</td><!--Celda del row-->
+                            <td class="tabla__td">09:00</td>
+                            <td class="tabla__td">19:00</td>
+                        </tr>
+                        <tr class="tabla__tr"><!--Row-->
+                            <td class="tabla__td">Miércoles</td><!--Celda del row-->
+                            <td class="tabla__td">09:00</td>
+                            <td class="tabla__td">19:00</td>
+                        </tr>
+                        <tr class="tabla__tr"><!--Row-->
+                            <td class="tabla__td">Jueves</td><!--Celda del row-->
+                            <td class="tabla__td">09:00</td>
+                            <td class="tabla__td">19:00</td>
+                        </tr>
+                        <tr class="tabla__tr"><!--Row-->
+                            <td class="tabla__td">Viernes</td><!--Celda del row-->
+                            <td class="tabla__td">09:00</td>
+                            <td class="tabla__td">19:00</td>
+                        </tr>
+                        <tr class="tabla__tr"><!--Row-->
+                            <td class="tabla__td">Sábado</td><!--Celda del row-->
+                            <td class="tabla__td">09:00</td>
+                            <td class="tabla__td">14:00</td>
+                        </tr>
+                        <tr class="tabla__tr"><!--Row-->
+                            <td class="tabla__td">Domingo</td><!--Celda del row-->
+                            <td class="tabla__td" colspan="2">Cerrado</td> <!--Colspan: combinar celdas-->
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>  
+
+    <main class="productos contenedor seccion">
+        <h2 class="productos__heading">Nuestros <span>productos</span></h2>
+
+        <div class="productos__grid">
+            <div class="producto">
+                <div class="producto__mask">
+                    <img src="build/img/producto_01.jpg" alt="imagen producto" class="producto__imagen">
+                </div>
+                
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Producto 1</h3>
+                    <p class="producto__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam obcaecati sapiente ullam sed quod temporibus.</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto__mask">
+                    <img src="build/img/producto_02.jpg" alt="imagen producto" class="producto__imagen">
+                </div>
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Producto 2</h3>
+                    <p class="producto__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam obcaecati sapiente ullam sed quod temporibus.</p>
+                    <p class="producto__precio">$35</p>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto__mask">
+                    <img src="build/img/producto_03.jpg" alt="imagen producto" class="producto__imagen">
+                </div>
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Producto 3</h3>
+                    <p class="producto__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam obcaecati sapiente ullam sed quod temporibus.</p>
+                    <p class="producto__precio">$50</p>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto__mask">
+                    <img src="build/img/producto_04.jpg" alt="imagen producto" class="producto__imagen">
+                </div>
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Producto 4</h3>
+                    <p class="producto__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam obcaecati sapiente ullam sed quod temporibus.</p>
+                    <p class="producto__precio">$75</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="cita">
+        <h2 class="cita__heading">Realiza una cita</h2>
+        <p class="cita__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Laboriosam nihil porro, et, aspernatur repellat quibusdam
+        rerum vitae repudiandae voluptates nostrum, nesciunt
+        dolorum quos nisi cum illo modi autem aliquam nam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Laboriosam nihil porro, et, aspernatur repellat quibusdam
+        rerum vitae repudiandae voluptates nostrum, nesciunt</p>
+
+        <a href="#" class="cita__enlace">Leer más</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__grid contenedor">
+            <div class="footer__widget">
+                <h3 class="footer__heading">Nosotros</h3>
+                <p class="footer__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam nihil porro, et, aspernatur repellat quibusdam
+                rerum vitae repudiandae voluptates nostrum, nesciunt
+                dolorum quos nisi cum illo modi autem aliquam nam.</p>
+            </div>
+
+            <div class="footer__widget">
+                <h3 class="footer__heading">Horario</h3>
+                <p class="footer__texto">Lun-Vie: 9AM - 7PM</p>
+                <p class="footer__texto">Sábado: 9AM - 14PM</p>
+                <p class="footer__texto">Domingo: Cerrado</p>
+            </div>
+
+            <div class="footer__widget">
+                <h3 class="footer__heading">Contacto</h3>
+                <p class="footer__texto">Av. Europa 58</p>
+                <nav class="sociales">
+                    <a class="sociales__enlace" href="https://facebook.com"><span class="sociales__accesible">Facebook</span></a>
+                    <a class="sociales__enlace" href="https://twitter.com"><span class="sociales__accesible">Twitter</span></a>
+                    <a class="sociales__enlace" href="https://instagram.com"><span class="sociales__accesible">Instagram</span></a>
+                    <a class="sociales__enlace" href="https://youtube.com"><span class="sociales__accesible">Youtube</span></a>
+                    <a class="sociales__enlace" href="https://tiktok.com"><span class="sociales__accesible">Tiktok</span></a>
+                    <a class="sociales__enlace" href="https://pinterest.com"><span class="sociales__accesible">Pinterest</span></a>
+                </nav>
+            </div>
+        </div>
+
+        <p class="footer__copyright">Carolina Spa & Salon. Todos los derechos reservados &copy;</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script><!--Libreria-->
+    <script src="js/app.js"></script>
+</body>
+</html>

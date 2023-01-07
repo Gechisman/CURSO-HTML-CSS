@@ -1,0 +1,68 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.clases{
+    padding: 5rem 0;
+    background-color: v.$gris;
+
+    &__heading{
+        @include m.heading;
+    }
+
+    &__grid{
+        @include m.tablet { 
+            @include m.grid(2, 2rem);
+            align-items: flex-start; //Esto hace que me quede 1 curso más pequeño que otro
+        }
+        @include m.desktop { 
+            @include m.grid(3, 2rem);
+        }
+    }
+}
+
+.clase{
+    background-color: v.$blanco;
+
+    &__imagen{
+        width: 100%;
+    }
+    &__meta{
+        background-color: v.$primario;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__fecha{
+        color: v.$blanco;
+    }
+
+    &__precio{
+        font-weight: 700;
+        background-color: v.$secundario;
+        padding: .5rem;
+        font-size: 1.2rem;
+        border-radius: 1rem;
+    }
+
+    &__contenido{        
+        padding: 2rem;
+    }
+
+    &__nombre{ //Para que me queden todos los cursos del mismo tamaño
+        min-height: 5.5rem;
+    }
+
+    &__descripcion{
+        color: v.$primario;
+    }
+
+    &__enlace{
+        @include m.boton(v.$primario, v.$blanco);
+        display: block; //Para que ocupe todo el tamaño
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+}

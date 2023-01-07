@@ -1,0 +1,64 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.favorito{
+    background-color: v.$blanco;
+    padding: v.$separacion;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 2.6rem -0.8rem darken(v.$grisClaro, 30%); //Darken: valor que quieres oscurecer y cuanto lo quieres oscurecer
+    border-radius: 1rem;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    @include m.tablet { 
+        margin-bottom: 0;
+    }
+
+    &__grid{
+        @include m.desktop{            
+            grid-template-columns: 1fr 3fr; //La imagen toma el 25% del tamaño
+            gap: 4rem;
+        }
+        @include m.tablet { 
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            gap: 2rem;            
+            align-items: center;
+        }
+    }
+
+    &__imagen{
+        max-width: 20rem;
+        margin: 0 auto 2rem auto;
+    }
+
+    &__contenido{ //No vale un text align pq la imagen de las estrellas no me la va a centrar
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include m.tablet { 
+            align-items: flex-start;
+        }
+    }
+
+    &__nombre{
+        margin: 1rem 0; //Elimina la separacion que habia entre el texto y la descripcion
+        color: v.$primario;
+        font-size: 2.4rem;
+    }
+
+    &__descripcion{
+        margin: .5rem 0;
+        text-align: center;
+        font-size: 1.6rem;
+        color: v.$secundario;
+        line-height: 1.7;
+
+        @include m.tablet { 
+            text-align: left;
+        }
+    }
+}
